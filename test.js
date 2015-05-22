@@ -16,12 +16,12 @@ test('stringify function (multiline)', function(t) {
 
   var r = STR(function() {
             calling(a(func(a, b, c)));
-            var a = 1;
+              var a = 1;
             var b = 2;
             var c = 3;
   })
 
-  t.equal(r, 'calling(a(func(a, b, c)));\nvar a = 1;\nvar b = 2;\nvar c = 3;', 'trimmed and indented');
+  t.equal(r, 'calling(a(func(a, b, c)));\n  var a = 1;\nvar b = 2;\nvar c = 3;', 'trimmed and indented');
 
   t.end();
 });

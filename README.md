@@ -9,6 +9,7 @@ extract a function body with the proper indentation
 ## use
 
 ```
+var STR = require('js-function-string');
 console.log(STR(function() {
         calling(a(func(a, b, c)));
           var a = 1;
